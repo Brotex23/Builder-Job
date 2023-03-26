@@ -326,7 +326,7 @@ function round(num, numDecimalPlaces)
     return math.floor(num * mult + 0.5) / mult
 end
 
--- Crtanje markera
+-- Marker
 Citizen.CreateThread(function()
 	local waitara = 500
 	while true do
@@ -335,13 +335,6 @@ Citizen.CreateThread(function()
 			local coords      = GetEntityCoords(GetPlayerPed(-1))
 			local isInMarker  = false
 			local currentZone = nil
-
-			for k,v in pairs(ConfigL.Cloakroom) do
-				if(GetDistanceBetweenCoords(coords, v.Pos.x, v.Pos.y, v.Pos.z, true) < v.Size.x) then
-					isInMarker  = true
-					currentZone = k
-				end
-			end
 			
 			if YouWork and TakeBrick and (GetDistanceBetweenCoords(coords, 1380.8416748047, -773.89587402344, 66.999649047852, true) < 1.5) then
 				isInMarker  = true
