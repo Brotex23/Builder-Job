@@ -6,16 +6,6 @@ ConfigL.DrawDistance = 40.0
 ConfigL.rprogress = true
 
 
-ConfigL.Cloakroom = {
-	CloakRoom = {
-		Pos   = {x = 1377.8543701172, y = -757.53582763672, z = 67.190284729004},
-		Size  = {x = 1.0, y = 1.0, z = 1.0},
-		Color = {r = 243, g = 154, b = 0},
-		Type  = 22,
-		Id = 1
-	}
-}
-
 ConfigL.Uniforms = {
 	uniforma = { 
 		male = {
