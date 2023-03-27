@@ -402,7 +402,7 @@ local peds = {
         exports["qtarget"]:AddTargetModel(peds, {
             options = {
                 {
-                    event = "otvorigradjevinara",
+                    event = "openbuilder",
                     icon = "fas fa-hammer",
                     label = "Builder!",
 					num = 1
@@ -413,7 +413,7 @@ local peds = {
             distance = 2.0
         })
 
-		AddEventHandler('otvorigradjevinara', function()
+		AddEventHandler('openbuilder', function()
 			TriggerEvent('nh-context:sendMenu', {
 				{
 					id = 1,
